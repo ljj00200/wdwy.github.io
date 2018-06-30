@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+    <!--在下面一行加入表单(form)-->
+      <form action="index.html" method="post">
+          <h1>登记信息</h1>
+          <fieldset>
+              <legend>步骤一：个人信息</legend>
+              <label for="name">用户名：</label>
+              <input type="text" id="name" name="user_name"><br>
+               <label for="name">邮箱：</label>
+              <input type="email"id="mail" name="user_emaile"><br>
+              <label for="name">密码：</label>
+              <input type="password"id="password" name="user_password"><br>
+          </fieldset>
+          
+          
+          <fieldset>
+              <legend>步骤二：个人偏好</legend>
+              <label for="name">个人简历：</label>
+              <textarea id="bio" name ="user_biography"></textarea><br><br>
+              <labal for="job">请选择你的职业：</labal>
+              <select id="job" name="user_job"><!--下拉菜单-->
+                  <optgroup label="学生">
+                        <option value="frontend_dev">大学</option>
+                        <option value="python_dev">中学</option>
+                        <option value="php_dev">小学</option>
+                        
+                  </optgroup>
+                  
+                  <optgroup label="上班族">
+                        <option value="android_dev">老师</option>
+                        <option value="ios_dev">工人</option>
+                        <option value="ies_dev">上班者</option>
+                  </optgroup>
+                  
+                  <optgroup label="其他">
+                        <option value="freelancer">自由职业者</option>   
+                  </optgroup>
+              </select><br><br>
+<!--Radio区域-->
+                  <label>请选择你的年龄：</label><br>
+                      <input type="radio" id="under_18" name= "user_age">
+                      <label for="under_18" class="light">18岁以下</label><br/>
+                        
+                      <input type="radio" id="over_18" name= "user_age">
+                      <label for="over_18" class="light">18岁及以上</label><br/><br/>
+<!--Radio区域-->
+              
+<!--Checkbox区域-->
+              <label>请选择你的爱好：</label><br>
+              <input type="checkbox"  id="gameing" name="user_hobby">
+              <label for="game" class="light">游戏</label><br/>
+               <input type="checkbox"  id="coding" name="user_hobby">
+              <label for="coding" class="light">野营</label><br/>
+              <input type="checkbox"  id="reading" name="user_hobby">
+              <label for="reading" class="light">读书</label><br/>
+              <input type="checkbox"  id="sing" name="user_hobby">
+              <label for="sing" class="light">唱歌</label><br/>
+              
+              
+              
+          </fieldset>
+          <button type="submit" class="tm-submit-btn"><li><a href="index3.html">提交</a></li></button>
+          
+          
+                       
+        
+        
+        </form>
+        
+        
+        
+      
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
